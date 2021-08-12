@@ -35,23 +35,23 @@ We want to change that.
 Enter the following in the terminal and press `Return`:
 
 ``` bash
-export PATH="/usr/local/anaconda3/bin:$PATH"
+echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.zshrc
 ```
 
 Then, reload the terminal environment:
 
 ``` bash
-source .bash_profile
+source .zshrc
 ```
 
-Now proceed to [verify your install](#verify-installation)
+Now proceed to [verify your install](#verifying-your-installation)
 
 ## Installing Anaconda Python for Linux and Windows
 
 First, we need to download the Anaconda Bash Script (a file that will install things for us). Enter the following into the terminal:
 
 ``` bash
-curl -O https://repo.anaconda.com/archive/Anaconda3-2019.10-Linux-x86_64.sh
+curl -O https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 ```
 
 Run the Anaconda Script by entering the following into the terminal:
@@ -99,7 +99,7 @@ Now we need to refresh our terminal settings, so type the following and press re
 source ~/.bashrc
 ```
 
-Now proceed to [verify your install](#verify-installation).
+Now proceed to [verify your install](#verifying-your-installation).
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
@@ -111,7 +111,7 @@ Now proceed to [verify your install](#verify-installation).
     and find the most recent Anaconda3 installer for Linux-x86_64
 <!-- markdownlint-restore -->
 
-## Verify Installation
+## Verifying Your Installation
 
 To verify that the correct version of Python has been installed, usually we would follow the `programName --version` logic from before:
 
@@ -126,7 +126,7 @@ Python 3.7.4
 ```
 
 which tells us that Python is installed.
-But, because most operating systems these days have some version of Python installed, this doesn't guarantee that the Anaconda version is available for us to use from the terminal.
+But, because most operating systems these days have some additional version of Python installed, this doesn't guarantee that the Anaconda version is available for us to use from the terminal.
 
 To check, initiate Python by entering the following into a terminal and pressing `Return`:
 
