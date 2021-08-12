@@ -1,7 +1,3 @@
-<!--
-TODO: Should we add a GIT GUI to installation guide?
--->
-
 # Installing Git and Setting Up Accounts
 
 Git is a Version Control System (VCS) that has gained a lot of traction among the programming community.
@@ -11,19 +7,9 @@ We will want to use version control to keep track of the files we write, and the
 
 During the course we will show you how to use [GitHub](https://www.github.com) to host some of your work and do code related project management. You will need to set up an account:
 
-<!-- During the course we will show you how to host some of your work on GitHub and the Economics Department's internal GitLab server.
-You will need to setup accounts for each of these: -->
-
 * Please [register](https://github.com/join) for a [GitHub](https://github.com/) account
 * When choosing a username we recommend not using a name that includes an employer or university in case you move later on
   * i.e. 'johnsmith' or 'johnsmith86' are OK, 'johnsmithUZH' probably not
-<!-- *   Sign into the [Economics Department's GitLab server](https://econgit.uzh.ch/). Use your UZH shortname and your web-access password (same as for OLAT). You will need to access "Econ Git" while on-site at UZH or whilst using a UZH VPN if you are off-site. -->
-
-<!-- !!! danger "Non-UZH Economics Students"
-    The UZH Department of Economics has a internal Git server that may be hard for you to access.
-    It looks and behaves almost identically to [GitLab](https://about.gitlab.com/).
-    We recommend that you register for an account here, so you can follow along in class. -->
-
 ## Mac Users
 
 ### Installing Git
