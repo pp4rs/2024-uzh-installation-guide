@@ -1,14 +1,6 @@
 # Installation Guide
 
-<!-- The Installation Guide for the 2017 edition is not currently available.
-
-Please check back closer to the course start date for a detailed guide on setting up your computational environment for our course
-
-Thanks!
-
-Programming Practices for Research in Economics Team -->
-
-These pages should help you to get started setting up the computing environment on your machine ready for the course "Programming Practices for Research in Economics" at the University of Zurich in **Winter 2020**.
+These pages should help you to get started setting up the computing environment on your machine ready for the course "Programming Practices for Research in Economics" at the University of Zurich in **Summer/Fall 2021**.
 
 **Please attempt to install necessary software and packages prior to the beginning of the course.**
 
@@ -18,7 +10,7 @@ These pages should help you to get started setting up the computing environment 
     * If you find any outdated links or unclear descriptions, email us at [pp4rs.contact@gmail.com]() so that we can update the instructions or clarify as needed.
     * Where necessary, we have provided instructions for Mac, Windows and Linux machines.
 
-!!! tip "Windows Users"
-    This version of the installation guide contains a new approach to setting up your machine compared to our previous courses. 
-    If you previously sat in any of the Programming Practices courses in 2018 or 2019, you will need to work through this guide from start to finish.
+!!! tip "Installation Help"
+    We will provide installation help for learners struggling to setup their machines on September the 1st.
 
+    Time & Location: TBA.
