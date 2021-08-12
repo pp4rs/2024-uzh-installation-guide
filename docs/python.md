@@ -9,7 +9,7 @@ Install using Homebrew.
 In your terminal type the following and press return:
 
 ``` bash
-brew cask install anaconda
+brew install --cask anaconda
 ```
 
 During the installation process you might be the following output asking you to review the license agreement:
