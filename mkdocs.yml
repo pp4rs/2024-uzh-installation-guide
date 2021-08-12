@@ -23,5 +23,3 @@ pages:
 theme: readthedocs
 markdown_extensions:
   - admonition
-  - codehilite:
-      linenums: true
