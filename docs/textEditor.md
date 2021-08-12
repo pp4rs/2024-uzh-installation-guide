@@ -29,10 +29,10 @@ The main advantages for us are that it includes support for debugging, embedded 
 VS Code can be installed using homebrew. Type the following into your terminal and hit return:
 
 ```bash
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
-Once it has been installed, verify your install by following the instructions [below](#verify-install).
+Once it has been installed, verify your install by following the instructions [below](#verifying-your-install).
 
 ## Installing VS Code on Ubuntu
 
@@ -42,11 +42,11 @@ VS Code is available to install via snap. Enter the following in your terminal a
 snap install code --classic
 ```
 
-Once it has been installed, verify your install by following the instructions [below](#verify-install).
+Once it has been installed, verify your install by following the instructions [below](#verifying-your-install).
 
 ## Installing VS Code on Windows
 
-Go to the VS Code [download page](https://code.visualstudio.com/download), and download the User Installer for Windows.
+Go to the VS Code [download page](https://code.visualstudio.com/download), and download the Installer for Windows.
 
 * Once downloaded double click to install.
 * Accept any default options.
@@ -58,7 +58,7 @@ The first time you launch VS code, you will see the following:
 
 Where it prompts you to install the 'Remote WSL' extension, choose 'Install'.
 
-Once complete, in your Ubuntu terminal type `code` and press `Return`.
+Once complete, in your Ubuntu terminal type `code .` and press `Return`.
 You should see the following (what appears after `code .`) below:
 
 <img src="../img/misc-windows/98-code-on-ubuntu.jpg" class="center" height = "500">
@@ -88,8 +88,8 @@ code --version
 which should yield output like:
 
 ``` out
-1.41.1
-26076a4de974ead31f97692a0d32f90d735645c0
+1.59.0
+379476f0e13988d90fab105c5c19e7abc8b1dea8
 x64
 ```
 
@@ -106,12 +106,12 @@ To add extensions:
   * Searching for them in the Marketplace
   * When you find them, click `Install`
 
-We recommend the following extensions to be added for this course:
+We recommend (but don't require) the following extensions to be added for this course:
 
 * Bracket Pair Colorizer 2
 * Code Spell Checker
 * Git History
-* LaTeX Workshop
+* GitLens
 * Markdown All in One
 * Markdown Preview Enhanced
 * Project Manager
