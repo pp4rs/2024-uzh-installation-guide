@@ -54,6 +54,13 @@ brew install zsh-completion
 
     This might seem a little daunting, so you don't need to do it now.
     We will do this with you live in class at the appropriate time.
+
+<!---
+  Autocomplete instructions from here  
+  https://stackoverflow.com/questions/26462667/git-completion-not-working-in-zsh-on-os-x-yosemite-with-homebrew
+
+--->
+
 ## Linux Users
 
 Git should be installed already for you.
