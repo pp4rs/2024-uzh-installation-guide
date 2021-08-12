@@ -35,70 +35,39 @@ brew install git
 brew link --force git
 ```
 
-Then close and reopen the terminal. Now [Verify your installation](#verifying your install)
+Then close and reopen the terminal. Now [Verify your installation](#verifying-your-install).
 
 ### Autocompletion
 
 When we code we want to be lazy - we don't always want to write out the whole line of code we want to enter, and would prefer the computer to autocomplete our line of code for us.
-The OSX terminal doesn't have this autocompletion by default, so let's add it using our trusty friend Homebrew.
+The default MacOS terminal doesn't have this autocompletion by default, so let's add it using our trusty friend Homebrew.
 
 Open a terminal and enter:
 
 ``` bash
-brew install bash-completion
+brew install zsh-completion
 ```
 
-This installs 'bash completion' into a file `/usr/local/etc/bash_completion.d`.
+!!! warning "Activating Autocomplete on MacOS"
+    To make the autocompletion work, you will need to add a block of code to your `~./zshrc` file:
 
-To make the autocompletion work, type the following into your terminal:
+    ```
+    if type brew &>/dev/null; then
+        PATH=$(brew --prefix)/share/zsh-completions:$FPATH
+        autoload -Uz compinit
+        compinit
+    fi
+    ```
 
-```bash
-echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
-```
+    Next, save the file.
+    Then source these updates (think of this as restarting your terminal) by entering the following command in your terminal:
 
-And restart your terminal session:
+    ```
+    source ~/.zshrc
+    ```
 
-``` bash
-source ~/.bash_profile
-```
-
-### Checking Autocomplete works
-
-Now you can autocomplete by pressing `tab` twice after a command.
-We will demonstrate this in class.
-
-For now, enter the following into you terminal and press `tab` twice (which we depict as `[tab] [tab]`) below:
-
-``` bash
-git [tab] [tab]
-```
-
-which will then show:
-
-```bash
-$ git [tab] [tab]
-add            blame          cherry-pick    config         format-patch   gui            merge          push           repack         rm             stage          whatchanged
-am             branch         citool         describe       fsck           help           mergetool      range-diff     replace        send-email     stash          worktree
-apply          bundle         clean          diff           gc             init           mv             rebase         request-pull   shortlog       status
-archive        checkout       clone          difftool       gitk           instaweb       notes          reflog         reset          show           submodule
-bisect         cherry         commit         fetch          grep           log            pull           remote         revert         show-branch    tag
-```
-
-<!--  OLD autocompletion guide - let's hope the brew one works
-Also install the command-line auto-completion script. For this go to [this website](https://github.com/git/git/raw/master/contrib/completion/git-completion.bash). You should now see a the text file starting with
-
-```
-# bash/zsh completion support for core Git.
-#
-# Copyright (C) 2006,2007 Shawn O. Pearce <spearce@spearce.org>
-# Conceptually based on gitcompletion (http://gitweb.hawaga.org.uk/).
-# Distributed under the GNU General Public License, version 2.0.
-```
-
-save this file as `git-completion.bash` to your user folder by pressing `CMD+s`. If you want to know where your user folder is, open a terminal and type ```pwd```. For Uli it is for example under `/Users/ubergmann`.
-
-If you use Safari, make sure to save the file as `Page Source` and don't append a `.txt` to its filename (Chrome does this automatically). If everything went right, you can now type `ls` in your terminal window and should see `git-completion.bash` there between other files. -->
-
+    This might seem a little daunting, so you don't need to do it now.
+    We will do this with you live in class at the appropriate time.
 ## Linux Users
 
 Git should be installed already for you.
@@ -121,7 +90,7 @@ Once complete, [verify your install](#verifying-your-install).
 ## Windows Users
 
 Git will be already installed inside your Ubuntu terminal.
-Verify this, by following [these instructions](#verifying-your-install).
+Verify this, by [verifying your installation](#verifying-your-install).
 
 ## Verifying your install
 
@@ -136,7 +105,7 @@ git --version
 You should get an output that looks like:
 
 ```bash
-git version 2.18.0
+git version 2.25.1
 ```
 
 Ensure that you have a version greater than `2.15.0` installed.
