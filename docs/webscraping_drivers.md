@@ -30,7 +30,7 @@ google-chrome --version
 which should yield output similar to:
 
 ``` bash
-Google Chrome 79.0.3945.117
+Google Chrome 92.0.4515.107
 ```
 
 ### Chromedriver
@@ -49,9 +49,9 @@ Verify your install.
 chromedriver --version
 ```
 
-The expected output is `ChromeDriver 79.0.3945.36 ....`.
+The expected output is `ChromeDriver 92.0.4515.107`.
 
-It **is important** that the version numbers (i.e the '79' part) match between Google Chrome and Chromedriver.
+It **is important** that the version numbers (i.e the '92.xxx' part) match between Google Chrome and Chromedriver.
 
 ## Linux Users
 
@@ -87,7 +87,7 @@ google-chrome --version
 which should yield output similar to:
 
 ``` bash
-Google Chrome 79.0.3945.117
+Google Chrome 92.0.4515.107
 ```
 
 ### Chromedriver
@@ -105,7 +105,7 @@ Install Chromedriver by pasting the following and then pressing `Return`:
 ``` bash
 sudo apt-get install unzip
 
-wget -N https://chromedriver.storage.googleapis.com/79.0.3945.36/chromedriver_linux64.zip
+wget -N https://chromedriver.storage.googleapis.com/92.0.4515.107/chromedriver_linux64.zip
 unzip chromedriver_linux64.zip
 chmod +x chromedriver
 
@@ -120,16 +120,21 @@ Now verify the installation was successful:
 chromedriver --version
 ```
 
-The expected output is `ChromeDriver 79.0.3945.36 ....`.
+The expected output is `ChromeDriver 92.0.4515.107 ....`.
 
-It **is important** that the version numbers (i.e the '79' part) match between Google Chrome and Chromedriver.
+It **is important** that the version numbers (i.e the '92.xx' part) match between Google Chrome and Chromedriver.
 
 !!! tip "Hat-tip"
     We borrowed quite liberally from Christopher Su to for instructions on [installing Chrome and Chromedriver](https://christopher.su/2015/selenium-chromedriver-ubuntu/).
 
 ## Windows Users
 
-We struggled to get webscraping to work inside the Windows Subsytem for Linux set up we have set up.
+!!! danger "Under Development"
+    Getting a webscraper to run while using WSL has been notoriously tough.
+    We are developing new set of instructions that will install what is necessary to get the job done, but we need to test it out a bit more rigorously before we provide you with instructions.
+    We will update this section in the days before the course begins.
+
+<!-- We struggled to get webscraping to work inside the Windows Subsytem for Linux set up we have set up.
 As an alternative, we we install a small python installation into your 'normal' Windows environment and run from there.
 
 Let's proceed as follows:
@@ -180,4 +185,4 @@ pip install selenium pandas jupyter
 
     Hence to add chromedriver, if you followed the instructions above, this means adding `C:\chromedriver`.
 
-    Click on OK as often as needed.
+    Click on OK as often as needed. -->
