@@ -41,7 +41,7 @@ All materials are licensed under a Creative Commons CC-SA license. The license a
 The suggested citation for the course materials is:
 
 ``` bash
-Lachlan Deer, Julian Langer, Lexi Schuvert and Martin Stancsics, 2021, Installation Guide, Programming Practices for Research in Economics, University of Zurich
+Lachlan Deer, Julian Langer, Lexi Schubert and Martin Stancsics, 2021, Installation Guide, Programming Practices for Research in Economics, University of Zurich
 ```
 
 If you find the installation guide useful - please drop us a line and say so - pp4rs.contact@gmail.com
