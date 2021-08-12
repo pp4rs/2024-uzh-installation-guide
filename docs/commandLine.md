@@ -25,7 +25,7 @@ To open a terminal session:
 We want to install 'X-code command line tools'. Copy and paste the following and press `Return`
 
 ``` bash
-xcode-select --install
+sudo xcode-select --install
 ```
 
 If you get a message that the command line tools are already installed, you can continue to the next step.
@@ -37,7 +37,7 @@ Homebrew is a package manager for Mac.
 Install Homebrew by opening a terminal and pasting the following command:
 
 ``` bash
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Verify that Homebrew installed correctly, enter the following into your terminal:
@@ -85,15 +85,15 @@ We need to ensure that our terminal session has access to what we installed.
 To do this we add some extra lines to our bash profile (we will discuss what this means in class - do what we say for now):
 
 ``` bash
-echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.bash_profile
-echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
-source .bash_profile
+echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.zshrc
+source .zshrc
 ```
 
 ## Linux & Windows Users
 
 * Linux Users: Open a terminal session with `Ctrl` + `Alt` + `T`.
-* Windows Users: Open the Ubuntu Terminal as we described [here](/windows-wsl/#installing-windows-terminal)
+* Windows Users: Open the Windows Terminal as we described [here](/windows-wsl/#installing-windows-terminal)
 
 Copy the following command into terminal and press `Return`:
 
