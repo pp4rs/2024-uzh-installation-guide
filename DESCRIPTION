@@ -1,8 +1,8 @@
 Lesson: installation-guide
 Title: Installation Guide for Programming Practices for Research Students
-Version: 2017.2.2
+Version: 2021.0.1
 Authors: person("Lachlan", "Deer", email = "lachlan.deer@gmail.com", role = c("aut", "cre"))
 Maintainer: Lachlan Deer <lachlan.deer@gmail.com>
 Description: Course Installation Guide. Built using `Mkdocs.` This is the most up to date version.
-License: CC-BY-NC-SA
+License: CC-BY-SA
 Encoding: UTF-8
