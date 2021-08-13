@@ -4,6 +4,8 @@
 # Module:  Installation Guide for Programming Practices for Research Students
 
 [![GitHub Pages](https://github.com/pp4rs/2021-uzh-installation-guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/pp4rs/2021-uzh-installation-guide//actions/workflows/deploy.yml)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+[![lifecycle](https://img.shields.io/badge/version-2021.0-red.svg)]()
 
 
 ## Meta-Information
