@@ -3,6 +3,9 @@
 
 # Module:  Installation Guide for Programming Practices for Research Students
 
+[![GitHub Pages](https://github.com/pp4rs/2021-uzh-installation-guide/actions/workflows/deploy.yml/badge.svg)](https://github.com/pp4rs/2021-uzh-installation-guide//actions/workflows/deploy.yml)
+
+
 ## Meta-Information
 
 * Module Maintainer: Lachlan Deer (`@lachlandeer`)
