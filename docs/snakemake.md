@@ -39,3 +39,8 @@ The expected output is the current version on the software, which should be grea
 ``` bash
 6.7.0
 ```
+
+!!! warning "--version on MacOS"
+
+We have reports that `snakemake --version` does not print anything to screen on some Mac installations.
+If this happens to you, for now don't worry about it.
