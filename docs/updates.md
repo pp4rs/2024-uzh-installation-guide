@@ -11,6 +11,11 @@ Here are the links to previous versions of the Installation Guide:
 
 ## Major Changes
 
+##v2021
+
+* Update package versions for all Operating Systems
+* Mac instructions using zsh rather than bash
+* WSL instructions compliant with WSL2
 ### v2020
 
 * Migrate from Cygwin to Windows Subsystem for Linux
