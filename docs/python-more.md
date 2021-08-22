@@ -19,7 +19,7 @@ pip install --upgrade pip
 If you get an error, try typing instead:
 
 ```bash
-python -m pip install --upgrade pip
+python -m pip install --upgrade pip --user
 ```
 
 For this course, we will need the package `Selenium` as part of the web scraping tool kit we will build up. First let us install a dependency for it via
@@ -38,7 +38,7 @@ pip install selenium
 If this succeeded, the last line it printed out should be:
 
 ``` bash
-Successfully installed selenium-3.14.0
+Successfully installed selenium-3.xx.x
 ```
 
 ## More packages
