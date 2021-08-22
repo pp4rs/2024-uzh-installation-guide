@@ -42,5 +42,5 @@ The expected output is the current version on the software, which should be grea
 
 !!! warning "--version on MacOS"
 
-We have reports that `snakemake --version` does not print anything to screen on some Mac installations.
-If this happens to you, for now don't worry about it.
+    We have reports that `snakemake --version` does not print anything to screen on some Mac installations.
+    If this happens to you, for now don't worry about it.
