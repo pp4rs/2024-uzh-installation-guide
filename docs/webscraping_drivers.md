@@ -18,7 +18,7 @@ We will install it via Homebrew.
 Enter the following into the terminal and hit `Return`:
 
 ``` bash
-brew cask install google-chrome
+brew install --cask google-chrome
 ```
 
 Verify the install:
@@ -40,7 +40,7 @@ It is called Chromedriver.
 Again, install via Homebrew:
 
 ``` bash
-brew cask install chromedriver
+brew install --cask chromedriver
 ```
 
 Verify your install.
@@ -52,6 +52,16 @@ chromedriver --version
 The expected output is `ChromeDriver 92.0.4515.107`.
 
 It **is important** that the version numbers (i.e the '92.xxx' part) match between Google Chrome and Chromedriver.
+
+!!! warning "Security and Privacy Settings"
+
+    When you try and run the `chromedriver --version` command, a popup window may emerge warning you that chromedriver cannot be opened because the developer cannot be verified.
+
+    If this happens, click 'Cancel' and read on.
+
+    Go to System Preferences > Security & Privacy > Allow apps downloaded from > "Always allow" next to chromedriver.
+
+    Now try again.
 
 ## Linux Users
 
