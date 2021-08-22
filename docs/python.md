@@ -81,14 +81,15 @@ Use the default.
 
 The installation will continue - it does take some time, so be patient.
 
-Once the installation is complete, you will get the following output:
+Once the installation is complete, you will get the following output, which asks a question of us:
 
 ``` bash
 ...
+Preparing transaction: done
+Executing transaction: done
 installation finished.
-Do you wish the installer to prepend the Anaconda3 install location
-to PATH in your /home/lachlan/.bashrc ? [yes|no]
->>>
+Do you wish the installer to initialize Anaconda3
+by running conda init? [yes|no]
 ```
 
 Type 'yes'.
