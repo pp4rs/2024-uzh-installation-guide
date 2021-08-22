@@ -11,7 +11,7 @@ Here are the links to previous versions of the Installation Guide:
 
 ## Major Changes
 
-##v2021
+### v2021
 
 * Update package versions for all Operating Systems
 * Mac instructions using zsh rather than bash
@@ -24,6 +24,6 @@ Here are the links to previous versions of the Installation Guide:
 * Remove GIS guide
 * Split's installation instructions of R, RStudio and additional R packaged into separate versions
 
-## 2019 Foundations edition
+### 2019 Foundations edition
 
 * Focus only on R, terminal, Git and snakemake
