@@ -13,7 +13,7 @@ We again install from Homebrew.
 Enter the following into the terminal:
 
 ```bash
-brew cask install mactex
+brew install --cask mactex
 ```
 
 ## LaTeX Install for Linux & Windows
@@ -33,9 +33,9 @@ tex --version
 which gives the following output:
 
 ``` bash
-TeX 3.14159265 (TeX Live 2019/Debian)
-kpathsea version 6.3.1
-Copyright 2019 D.E. Knuth.
+TeX 3.141592653 (TeX Live 2021)
+kpathsea version 6.3.3
+Copyright 2021 D.E. Knuth.
 There is NO warranty.  Redistribution of this software is
 covered by the terms of both the TeX copyright and
 the Lesser GNU General Public License.
@@ -83,7 +83,7 @@ pandoc --version
 The expected output starts with the following information:
 
 ```bash
-pandoc 2.2.x.x
+pandoc 2.x
 
 ```
 
