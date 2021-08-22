@@ -12,15 +12,15 @@ Proceed as follows:
 ```r
 to_install <-c( "reshape", "rmarkdown",
                 "plm", "Hmisc", "sandwich",
-                "Ecdat", "stargazer", "knitr",
-                "httr", "rvest", "xml2",
+                "Ecdat", "knitr",
+                "httr", "xml2",
                 "xtable","tidyverse", "AER",
                 "rdd", "car", "aod", "lmtest",
-                "lfe", "nlme", "lme4",
-                "erer", "margins", "multiwayvcov",
-                "lubridate", "haven", "rddensity",
-                "rdrobust", "ivpack", "readxl",
-                "ggrepel", "multiwayvcov", "RSQLite",
+                "fixest", "nlme", "lme4",
+                "multiwayvcov",
+                "lubridate", "haven", 
+                "ivpack", "readxl",
+                "ggrepel",
                 "dbplyr", "devtools",
                 "rticles", "here",
                 "optparse", "rlist"
@@ -47,3 +47,11 @@ from_gh <- c("ddsjoberg/gtsummary",
 
 devtools::install_github(from_gh)
 ```
+
+!!! warning "Package List May Update"
+
+    This list of packages may be updated during the course.
+    There has been a raft of new, easier to use packages for some tools that we will introduce.
+    Before we list them here, we want to test them out a little more rigorously.
+
+    Check back here before Week 3 of the course to see if there are changes.
