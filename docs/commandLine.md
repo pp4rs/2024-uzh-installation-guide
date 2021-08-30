@@ -113,8 +113,8 @@ sudo apt-get install gdebi-core
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
 !!! tip "Windows Users: Copy and Paste"
-    The 'traditional' `Ctrl + C` and `Ctrl + v` doesn't work with your terminal because as `Ctrl + Key` commands have a special meaning.
-    There are two alternatives:
+    The 'traditional' `Ctrl + C` and `Ctrl + v` may not work with your terminal because the `Ctrl + Key` commands have a special meaning with Linux operating systems.
+    f they don't work for you, there are two alternatives:
 
     * Use the 'Linux' copy and paste commands: copy is `Ctrl + Shift + C` and paste is `Ctrl + Shift + V`.
     * To paste text, you just do a right-click.
@@ -124,7 +124,7 @@ sudo apt-get install gdebi-core
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
-!!! tip "Windows Users: Library Installation"
+<!-- !!! tip "Windows Users: Library Installation"
     At some point in the install process you may see a screen like this one:
     
     <img src="../img/misc-windows/96-lib-installer.jpg" class="center" height = "500">
@@ -132,5 +132,5 @@ sudo apt-get install gdebi-core
     Here you need to make a choice, which you do by using the left and right arrows followed by `Return`.
     Lachlan chose, 'No' - but you can safely choose yes without your computer burning down.
 
-    Whenever you get these kinds of screens, you can scroll up and down with the up and down buttons if needed and make decisions by selecting a choice as described above.
+    Whenever you get these kinds of screens, you can scroll up and down with the up and down buttons if needed and make decisions by selecting a choice as described above. -->
 <!-- markdownlint-restore -->
