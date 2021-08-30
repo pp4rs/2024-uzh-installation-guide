@@ -11,11 +11,12 @@ Here are the links to previous versions of the Installation Guide:
 
 ## Major Changes
 
-### v2021
+### v2021.0.1
 
 * Update package versions for all Operating Systems
 * Mac instructions using zsh rather than bash
 * WSL instructions compliant with WSL2
+* Uses Google Chrome and Chromedriver from WSL for webscraping via an xserver
 ### v2020
 
 * Migrate from Cygwin to Windows Subsystem for Linux
