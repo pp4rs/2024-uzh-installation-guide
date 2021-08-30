@@ -30,29 +30,17 @@ To see if it installed correctly, try and open RStudio from the GNOME menu - the
 
 ## Installing RStudio for Windows Users
 
-!!! danger "Under Development"
-    
-    We need to run some further checks on getting the Linux version of RStudio running on Windows with 
-    Microsoft's latest release of Windows Subsystem for Linux. 
-    
-    Check back here closer to September 1st for the latest instructions.
-
-<!-- Using RStudio together with the R that we installed into our WSL Ubuntu setup is a little trickier - because we don't have access to a graphical interface.
-
-The trick will be to install the server version of RStudio.
-It may sound slightly daunting - but it is actually quite easy!
-
-First, we download the most recent version of RStudio Server for Ubuntu 18 (see [here](https://rstudio.com/products/rstudio/download-server/debian-ubuntu/)).
+Download the most recent version of RStudio Server for Ubuntu 18 (see [here](https://rstudio.com/products/rstudio/download-server/debian-ubuntu/)).
 Enter the following into your terminal and press `Return`:
 
 ```bash
-wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.2.5033-amd64.deb
+wget https://download2.rstudio.org/server/bionic/amd64/rstudio-server-1.4.1717-amd64.deb
 ```
 
 Now install it by entering this command and hitting `Return`:
 
 ``` bash
-sudo gdebi rstudio-server-1.2.5033-amd64.deb
+sudo gdebi rstudio-server-1.4.1717-amd64.deb
 ```
 
 Now that we have RStudio installed on our subsystem, how can we use it?
@@ -77,4 +65,7 @@ After logging in successfully you have access to the RStudio that you installed 
 
 To log out, click on the log out button in the top right corner.
 
-To stop the RStudio server from running (logging out doesn't stop it), enter `rstudio stop` into your terminal. -->
+To stop the RStudio server from running (logging out doesn't stop it), enter `rstudio stop` into your terminal.
+
+!!! tip "Why RStudio Server?"
+    We are using RStudio server rather then the desktop version of RStudio because we have found it the easiest way to interact with the R installation inside the WSL system.
