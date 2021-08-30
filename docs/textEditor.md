@@ -21,7 +21,7 @@ Go to the [downloads page](https://www.sublimetext.com/3) and download the live 
 
 VS Code is a relatively new text editor that works across all three platforms: Linux, Windows and Mac.
 In a short time it has already become one of most used text editors and we hope you will soon see why.
-It is built by Microsoft, but is open source, i.e. everyone can see and modify the program's internal code - so it is less nasty on the conscious than some of Microsoft's traditional products.
+It is built by Microsoft, but is open source, i.e. everyone can see and modify the program's internal code - so it is less nasty on the consciousness than some of Microsoft's traditional products.
 The main advantages for us are that it includes support for debugging, embedded Git control and GitHub, syntax highlighting, intelligent code completion, and many useful plugins - all of which make our lives much easier.
 
 ## Installing VS Code on Mac
@@ -52,7 +52,7 @@ Go to the VS Code [download page](https://code.visualstudio.com/download), and d
 * Accept any default options.
 * At the end of the install, launch VS Code (it gives you this option on the last window).
 
-The first time you launch VS code, you will see the following:
+<!-- The first time you launch VS code, you will see the following:
 
 <img src="../img/misc-windows/99-vscode-wsl.jpg" class="center" height = "500">
 
@@ -63,7 +63,7 @@ You should see the following (what appears after `code .`) below:
 
 <img src="../img/misc-windows/98-code-on-ubuntu.jpg" class="center" height = "500">
 
-When the unpacking is complete, VS Code should open.
+When the unpacking is complete, VS Code should open. -->
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
