@@ -32,7 +32,7 @@ The process for installing everything we need here is quite order dependent - fo
       * Type `winver` into the run command text box and hit `OK`.
       * You should now see a dialogue screen with a OS build number.
       * If the build number is older than 20262, update your windows to a later build.
-3. Open PowerShell and type 
+3. Open PowerShell as an administrator and type
 
 ```bash
 wsl --install
@@ -48,6 +48,14 @@ You will likely be asked to restart your machine during this installation proces
 
 If you get error messages, you can check the [troubleshooting pages][wsl-trouble].
 This can be a little daunting, come see us if you need in person help.
+
+!!! warning "WSL installation issues"
+
+    When we were trying this ourselves using Windows laptops provided by the University of Zurich we frequently got error messages saying the installation could not continue followed by an error code.
+    The missing piece is a need to change a setting in the [BIOS][wsl-bios].
+    Changing the 'Intel Virtualization Technology' setting to 'Enabled' fixed it for us.
+
+    If you don't feel comfortable making this kind of BIOS change yourself, we'll help you if you come and see us. 
 
 ## Set up your Linux user info
 
@@ -83,3 +91,4 @@ Occasionally there will be differences between Linux and Windows steps - these w
 
 [windows-insiders]: https://insider.windows.com/getting-started
 [wsl-trouble]: https://docs.microsoft.com/en-us/windows/wsl/install-win10#troubleshooting-installation
+[wsl-bios]: https://appuals.com/wsl-register-distribution-error-0x80370102-on-windows-10/
