@@ -57,6 +57,21 @@ Before continuing, lets be sure everything in Homebrew is up to date by entering
 ``` bash
 brew upgrade
 ```
+!!! warning "brew upgrade on UZH MacOS"
+
+    We've seen some problems running `brew upgrade` on UZH computers with MacOS.
+    If you are experiencing this, run the following two lines:
+
+    ```
+    sudo chown -R "$USER":admin/usr/local/Cellar
+    ```
+
+    and 
+
+    ```
+    sudo chown -R "$USER":admin/usr/local/share
+    ```
+
 
 ### Installing Packages with Homebrew
 
