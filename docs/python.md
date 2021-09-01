@@ -57,7 +57,7 @@ curl -O https://repo.anaconda.com/archive/Anaconda3-2021.05-Linux-x86_64.sh
 Run the Anaconda Script by entering the following into the terminal:
 
 ``` bash
-bash Anaconda3-2019.10-Linux-x86_64.sh
+bash Anaconda3-2021.05-Linux-x86_64.sh
 ```
 
 As this script runs through, review and accept the license agreement.
