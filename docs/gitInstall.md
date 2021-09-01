@@ -34,26 +34,19 @@ Open a terminal and enter:
 brew install zsh-completion
 ```
 
-<!-- !!! warning "Activating Autocomplete on MacOS"
+!!! warning "Activating Autocomplete on MacOS"
     To make the autocompletion work, you will need to add a block of code to your `~./zshrc` file:
 
     ```
-    if type brew &>/dev/null; then
-        PATH=$(brew --prefix)/share/zsh-completions:$FPATH
-        autoload -Uz compinit
-        compinit
-    fi
+    echo "autoload -Uz compinit" >> .zshrc
+    echo "compinit" >> .zshrc
     ```
 
-    Next, save the file.
     Then source these updates (think of this as restarting your terminal) by entering the following command in your terminal:
 
     ```
     source ~/.zshrc
     ```
-
-    This might seem a little daunting, so you don't need to do it now.
-    We will do this with you live in class at the appropriate time. -->
 
 <!---
   Autocomplete instructions from here  
