@@ -1,6 +1,6 @@
 # Installation Guide
 
-These pages should help you to get started setting up the computing environment on your machine ready for the course "Programming Practices for Research in Economics" at the University of Zurich in **Summer/Fall 2021**.
+These pages should help you to get started setting up the computing environment on your machine ready for the course "Programming Practices for Research in Economics" at the University of Zurich in **Fall 2022**.
 
 **Please attempt to install necessary software and packages prior to the beginning of the course.**
 
