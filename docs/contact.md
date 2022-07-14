@@ -21,9 +21,8 @@ Programming Practices for Research in Economics was created by
 * Julian Langer
 * Max Winkler
 
-at the Department of Economics, University of Zurich in 2016. This installation guide is for the 2021 edition, conducted by
+at the Department of Economics, University of Zurich in 2016. This installation guide is for the 2022 edition, conducted by
 
-* Lachlan Deer
-* Julian Langer
-* Lexi Schubert
 * Martin Stanscics
+* TBA
+* TBA
