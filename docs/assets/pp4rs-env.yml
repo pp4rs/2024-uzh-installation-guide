@@ -1,0 +1,42 @@
+name: pp4rs
+
+channels:
+  - conda-forge
+
+dependencies:
+  # basics
+  - python
+  - pip
+
+  # ide and shell
+  - jupyter
+  - jupyterlab
+
+  # dev tools
+  - flake8
+  - yapf
+  - bioconda::snakemake-minimal
+
+  # scientific stack
+  - numpy
+  - scipy
+  - sympy
+  - pandas
+  - numba
+  - statsmodels
+  - linearmodels
+
+  # dataviz stack
+  - matplotlib
+  - seaborn
+  - colorcet
+  # - altair
+  # - vega
+
+  # http and html
+  - requests
+  - beautifulsoup4
+  - lxml
+  - selenium
+  - pip:
+    - chromedriver-autoinstaller
