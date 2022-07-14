@@ -7,12 +7,12 @@ R's use in the data science and econometrics community has taken off over recent
 
 Go to the [R homepage](https://cran.r-project.org/) and download the installer for your operating system.
 
-The current version for Mac and Windows is `R version 4.1.1`.
+The current version for Mac and Windows is `R version 4.2.1`.
 
 Once you have installed R, [verify your install](#verifying-your-install-of-r-all-users).
 
 !!! tip "Why Not Install via Homebrew?"
-        There is conflicting views on Homebrew's installation of `R`.
+        There are conflicting views on Homebrew's installation of `R`.
         Because we haven't tried it to ensure no problems will emerge, we recommend going with the installation based on the CRAN distributed package.
 
 ## Installing R for Linux & Windows Users
@@ -47,7 +47,7 @@ sudo apt-get install libopenblas-base
 Now, [verify your install](#verifying-your-install-of-r-all-users).
 
 !!! warning "R on WSL Ubuntu vs. R on native Windows"
-        Even if you already have a version of `R` installed on your Windows machine, you need to install `R` inside the WSL Ubuntu 18.04 environment we have set up.
+        Even if you already have a version of `R` installed on your Windows machine, you need to install `R` inside the WSL Ubuntu environment we have set up.
         Your Ubuntu terminal cannot see everything you have on your native Windows installation.
 
 ## Verifying your Install of R - All Users
@@ -61,5 +61,5 @@ R --version
 followed by pressing `Return`. The expected return begins with:
 
 ```bash
-R version 4.1.x (2021-xx-xx) -- "Some Funky Name"
+R version 4.2.x (2022-xx-xx) -- "Some Funky Name"
 ```
