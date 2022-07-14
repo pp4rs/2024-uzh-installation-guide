@@ -9,7 +9,7 @@ pages:
 - Python: python.md
 - Python Extras: python-more.md
 - Webscraping: webscraping_drivers.md
-- Automation with Snakemake: snakemake.md
+# - Automation with Snakemake: snakemake.md
 - R: r.md
 - RStudio: rstudio.md
 - R Packages: r-packages.md
