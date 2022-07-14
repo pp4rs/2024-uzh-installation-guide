@@ -5,13 +5,11 @@
 Sometimes when we scrape the web, we need to automate our computer to open a web browser to gather information from each page.
 This is especially true when the site we want to scrape has content that is loaded dynamically with javascript.
 
-We will install one package to help us here: Chromedriver
+We will solve this by installing Google Chrome and using a tool called Chromedriver. The former has to be installed manually, but the latter  will be handled by a very handy Python package we have already installed (`chromedriver-autoinstaller`).
 
 Installing this stuff is operating system specific, hence so are the instructions below.
 
 ## Mac Users
-
-### Google Chrome
 
 We need an up to date version of the web browser Google Chrome.
 We will install it via Homebrew.
@@ -30,10 +28,10 @@ google-chrome --version
 which should yield output similar to:
 
 ``` bash
-Google Chrome 92.0.4515.107
+Google Chrome 103.0.5060.53
 ```
 
-### Chromedriver
+<!-- ### Chromedriver
 
 Now we install some software than can control a Google Chrome browser.
 It is called Chromedriver.
@@ -61,11 +59,9 @@ It **is important** that the version numbers (i.e the '92.xxx' part) match betwe
 
     Go to System Preferences > Security & Privacy > Allow apps downloaded from > "Always allow" next to chromedriver.
 
-    Now try again.
+    Now try again. -->
 
 ## Windows and Linux Users
-
-### Google Chrome
 
 We need an up to date version of Google Chrome and some additional linux packages.
 
@@ -97,10 +93,10 @@ google-chrome --version
 which should yield output similar to:
 
 ``` bash
-Google Chrome 92.0.4515.107
+Google Chrome 103.0.5060.53
 ```
 
-### Chromedriver
+<!-- ### Chromedriver
 
 Install `xvfb` by pasting the following into a terminal and then pressing `Return`:
 
@@ -135,35 +131,44 @@ The expected output is `ChromeDriver 92.0.4515.107 ....`.
 It **is important** that the version numbers (i.e the '92.xx' part) match between Google Chrome and Chromedriver.
 
 !!! tip "Hat-tip"
-    We borrowed quite liberally from Christopher Su to for instructions on [installing Chrome and Chromedriver](https://christopher.su/2015/selenium-chromedriver-ubuntu/).
+    We borrowed quite liberally from Christopher Su to for instructions on [installing Chrome and Chromedriver](https://christopher.su/2015/selenium-chromedriver-ubuntu/). -->
 
-## Additional Steps for Windows Users
+## Additional Steps for Windows 10 Users
 
 We will Google Chrome to be able to "pop out" of our Ubuntu installation so that we can see it visually. 
 Here's how we can make that happen:
 
-* Install [vcxsrv](https://sourceforge.net/projects/vcxsrv/) on Windows
+!!! note
+    Windows 11 can handle GUI apps under WSL by default. This section is only relevant form Windows 10 users.
+
+* Install [GWSL](https://opticos.github.io/gwsl/) on Windows. It's easiest to get it through the Windows Store.
 * Install the x11 client inside our Ubuntu installation. Type the following into the terminal:
 
 ```bash
 sudo apt install x11-apps -y
 ```
 
-* Add the following line to the `~/.bashrc` on our Ubuntu install:
+* Enable display and audio exporting in GWSL
+
+    * Start GWSL from the Start menu
+    * Click on its icon on the taskbar
+    * Select GWSL distro tools
+    * Select Display/Audio Auto-exporting
+    * Restart Ubuntu if prompted
+
+
+!!! caution
+    As you are told by GWSL, you will need to allow GWSL through the firewall both on public and private networks. Be sure to check all boxes when prompted by Windows Firewall. If you miss this step, follow the guide [here](https://opticos.github.io/gwsl/tutorials/manual.html).
+
+Finally, let's test if these steps worked. Open an Ubuntu terminal, and type
 
 ```bash
-export DISPLAY=$(awk '/nameserver/ {print $2}' /etc/resolv.conf):0.0
+google-chrome
 ```
 
-If you don't know how to complete this step, talk to us before or after a session or during one of the breaks in the course.
+A linuxy looking Google Chrome should open in a new window.
 
-* Source the `.bashrc` file inside the Ubuntu shell:
-
-```bash
-source ~/.bashrc
-```
-
-!!! tip "Starting xLaunch on Windows"
+<!-- !!! tip "Starting xLaunch on Windows"
 
     **Note**: Students don't need to do what is mentioned inside this box during installation. 
     The info in this box is designed to remind us as instructors what we will need to do before starting the webscraping session.
@@ -173,6 +178,6 @@ source ~/.bashrc
     * Select Start no client (default).
     * Check Disable access control
 
-    When one is finished their session, exit xLaunch.
+    When one is finished their session, exit xLaunch. -->
 
 <!-- * Uncheck Native opengl  <- this might be needed?-->
