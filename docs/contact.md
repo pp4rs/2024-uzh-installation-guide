@@ -2,13 +2,7 @@
 
 ## Questions or Comments
 
-Please contact us via email:
-
-``` bash
-pp4rs.contact "AT" gmail.com
-```
-
-with the title "Installation Guide: Programming Practices for Research in Economics."
+Please contact us via email: [pp4rs@econ.uzh.ch](pp4rs@econ.uzh.ch) with the title "Installation Guide: Programming Practices for Research in Economics."
 
 We look forward to hearing from you if you have questions about the installation guide, found this installation guide useful, or have further comments or suggestions to improve it.
 
