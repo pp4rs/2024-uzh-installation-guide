@@ -5,16 +5,19 @@ channels:
 
 dependencies:
   # basics
-  - python
+  - python=3.10
   - pip
 
   # ide and shell
   - jupyter
   - jupyterlab
+  - nb_conda_kernels
 
-  # dev tools
+  # linter and formatter
   - flake8
   - yapf
+
+  # workflow automation
   - bioconda::snakemake-minimal
 
   # scientific stack
@@ -30,8 +33,8 @@ dependencies:
   - matplotlib
   - seaborn
   - colorcet
-  # - altair
-  # - vega
+  - altair
+  - vega
 
   # http and html
   - requests
