@@ -11,6 +11,6 @@ These pages should help you to get started setting up the computing environment 
     * Where necessary, we have provided instructions for Mac, Windows and Linux machines.
 
 !!! tip "Installation Help"
-    We will provide installation help for learners struggling to setup their machines on September the 1st.
+    We will provide installation help for learners struggling to setup their machines on August the 24th.
 
     Time & Location: TBA.
