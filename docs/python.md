@@ -27,7 +27,8 @@ Do you approve the license terms? [yes|no]
 
 Press `Return` until you reach the end, and type 'yes'.
 
-<!-- ### Making Anaconda Python Accessible from the Terminal
+<!--
+### Making Anaconda Python Accessible from the Terminal
 
 By default, Mac uses a default install of Python inside the terminal.
 We want to change that.
@@ -42,7 +43,8 @@ Then, reload the terminal environment:
 
 ``` bash
 source .zshrc
-``` -->
+```
+-->
 
 Now proceed to [verify your install](#verifying-your-installation)
 
