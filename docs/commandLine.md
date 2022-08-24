@@ -114,7 +114,7 @@ Copy the following command into terminal and press `Return`:
 
 ```bash
 sudo apt-get update
-sudo apt-get install libcurl4-gnutls-dev librtmp-dev
+sudo apt-get install libcurl4-gnutls-dev librtmp-devm libfontconfig1-dev
 ```
 
 After the installation succeeded successfully repeat this one-by-one with the following two other commands:

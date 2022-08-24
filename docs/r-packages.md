@@ -21,7 +21,7 @@ to_install <-c( "reshape", "rmarkdown",
                 "lubridate", "haven", 
                 "ivpack", "readxl",
                 "ggrepel",
-                "dbplyr", "devtools",
+                "dbplyr", "remotes",
                 "rticles", "here",
                 "optparse", "rlist"
                 )
@@ -45,7 +45,7 @@ from_gh <- c("ddsjoberg/gtsummary",
              "rstudio/renv"
              )
 
-devtools::install_github(from_gh)
+remotes::install_github(from_gh)
 ```
 
 !!! warning "Package List May Update"
