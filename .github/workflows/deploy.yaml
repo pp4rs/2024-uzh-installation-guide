@@ -10,14 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        uses: mhausenblas/mkdocs-deploy-gh-pages@nomaterial
         # mhausenblas/mkdocs-deploy-gh-pages@master for material theme
         # Or use mhausenblas/mkdocs-deploy-gh-pages@nomaterial to build without the mkdocs-material theme
         env:
-          run: ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #CUSTOM_DOMAIN: optionaldomain.com
           #CONFIG_FILE: folder/mkdocs.yml
