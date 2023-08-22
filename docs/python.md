@@ -1,9 +1,12 @@
-# Anaconda Python
+# Python
 
-Anaconda is a pre-packaged Python distribution for scientific users.
-Unlike other Python distributions, this means that most additional functionality that we need to do numerical computing, statistics, plotting and the like come already installed - which saves us a lot of time.
+Conda is a pre-packaged Python distribution. It is mainly used as a package manager that enables simple creation of virtual enviroments for Python. More on this during the course.
+
+We will be installing either "Miniforge" or "Miniconda" for this course. Both can, for now, be regarded as equivalent. Some of you might have heard of "Anaconda". Anaconda is the bigger brother of Miniconda, but contains many packages we don't require. 
 
 ## Installing Miniforge Python for Mac
+!!! Note "Department Managed Macs"
+    Go to [Miniconda Homepage](https://conda.io/miniconda.html) and either install the latest version of "Miniconda3 macOS Intel x86 64-bit pkg" or "Miniconda3 macOS Apple M1 64-bit pkg", depending on whether you have an older Intel or newer Apple Silicon Mac. Accept all defaults during installation. Open a terminal and [verify your install](#verifying-your-installation)
 
 Install using Homebrew.
 In your terminal type the following and press return:
@@ -48,7 +51,7 @@ source .zshrc
 
 Now proceed to [verify your install](#verifying-your-installation)
 
-## Installing Miniforge Python for Linux and Windows
+## Installing Miniforge Python for Linux
 
 First, we need to download the Anaconda Bash Script (a file that will install things for us). Enter the following into the terminal:
 
@@ -104,15 +107,20 @@ source ~/.bashrc
 
 Now proceed to [verify your install](#verifying-your-installation).
 
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-!!! tip "Updating the Anaconda Install"
-    The above procedure will always install the latest available Miiforge distribution for your platform. If you want to update an existing installation, you can generally do that using the command `conda updade --all`, which updates all packages in a given environment (including conda itself).
-<!-- markdownlint-restore -->
+
+
+
+## Installing Miniconda on Windows
+We are installing Miniconda via winget with the following command:
+```bash
+winget install -e --id Anaconda.Miniconda3 --interactive
+```
+Accept all defaults and restart the WindowsTerminal. After restart, proceed to [verify your install](#verifying-your-installation).
+ 
 
 ## Verifying Your Installation
 
-In order to activate Miniforge's environment, we have to start with
+In order to activate Miniforge/Miniconda's environment, we have to start with
 
 ```
 conda activate
@@ -131,7 +139,7 @@ Python 3.9.13
 ```
 
 which tells us that Python is installed.
-But, because most operating systems these days have some additional version of Python installed, this doesn't guarantee that the Miniforge version is available for us to use from the terminal.
+But, because most operating systems these days have some additional version of Python installed, this doesn't guarantee that the Miniforge/Miniconda version is available for us to use from the terminal.
 
 To check, initiate Python by entering the following into a terminal and pressing `Return`:
 
@@ -149,7 +157,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 where the operating system name should be different for Mac users.
 
-Now we see that the terminal is using the Miniforge (conda-forge) version as we wanted.
+Now we see that the terminal is using the Miniforge/Miniconda version as we wanted.
 To quit the Python session we just opened, type the following at the `>>>`:
 
 ``` python
@@ -157,20 +165,21 @@ To quit the Python session we just opened, type the following at the `>>>`:
 ```
 
 and you will return to your terminal.
-This was successful if you now see a `$` rather than the `>>>`.
+This was successful if you now see a file path rather than the `>>>`.
 
-If you want to deactivate the Miniforge environment (e.g. so that you can use the system's Python interpreter), you simply have to type
+If you want to deactivate the Miniforge/Miniconda environment (e.g. so that you can use the system's Python interpreter), you simply have to type
 
 ```bash
 conda deactivate
 ```
 
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-<!-- !!! tip "Python 2 vs Python 3"
+!!! tip "Updating the Conda Install"
+    The above procedure will always install the latest available Miniforge distribution for your platform. If you want to update an existing installation, you can generally do that using the command `conda updade --all`, which updates all packages in a given environment (including conda itself). 
+
+!!! tip "Python 2 vs Python 3"
     Python 2 and 3 are incompatible in syntax. If you had Python 2 previously installed on your machine, you might have seen `Python 2.x.x` above. In that case try typing
 
     ```python3 --version```
 
-    instead. Now you should see a message like the one above and are good to go for the course. -->
-<!-- markdownlint-restore -->
+    instead. Now you should see a message like the one above and are good to go for the course.
+

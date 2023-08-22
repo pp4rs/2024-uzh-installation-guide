@@ -1,8 +1,8 @@
 site_name: Programming Practices for Research in Econonomics
 nav:
 - Welcome: index.md
-- Windows Subsystem: windows-wsl.md
-#- Terminology: terminology.md
+# - Windows Subsystem: windows-wsl.md
+# - Terminology: terminology.md
 - Command Line Tools: commandLine.md
 - Text Editor: textEditor.md
 - Git: gitInstall.md
@@ -13,7 +13,8 @@ nav:
 - R: r.md
 - RStudio: rstudio.md
 - R Packages: r-packages.md
-- LaTeX & Pandoc: pandoc.md
+- LaTeX: latex.md
+- Pandoc: pandoc.md
 - The Finish Line!: finish-line.md
 - Contact Us: contact.md
 - Citation & License: citation-license.md

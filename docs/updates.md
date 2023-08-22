@@ -9,8 +9,14 @@ Here are the links to previous versions of the Installation Guide:
 * [`2019 Foundations edition`](https://github.com/pp4rs/foundations-installation-guide), by Lachlan Deer & Julian Langer
 * [`2020 edition`](https://github.com/pp4rs/2020-uzh-installation-guide), by Ulrich Bergmann, Matteo Courthoud & Lachlan Deer
 * [`2021 edition`](https://github.com/pp4rs/2021-uzh-installation-guide), by Lachlan Deer, Julian Langer, Lexi Schubert & Martin Stancsics
+* [`2022 edition`](https://github.com/pp4rs/2022-uzh-installation-guide), by Lachlan Deer, Julian Langer & Martin Stancsics
 
 ## Major Changes
+### v2023
+* Due to loss of admin rights on UZH issued machines, many installations weren't possible anymore, demanding many changes during installation
+* Switch to native Windows applications instead of `WSL`
+* Usage of `winget` for Windows
+* Alternative to `homebrew` on Mac
 
 ### v2022
 * Switch from the `Anaconda` to `Miniforge` to have a leaner Python distribution

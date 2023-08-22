@@ -18,9 +18,9 @@ To open a terminal session:
 * Type in 'terminal'
 * When the terminal appears, open it.
 
-### Installing New Tools for the Terminal
-
-#### The X-code Tools
+!!! Note "Department Managed Macs"
+    Unfortunately, installation of Homebrew requires admin rights which aren't available on laptops newly issued by the department. Please move on to the next installation step "Text Editor".
+#### Installing the X-code Tools
 
 We want to install 'X-code command line tools'. Copy and paste the following and press `Return`
 
@@ -30,7 +30,7 @@ sudo xcode-select --install
 
 If you get a message that the command line tools are already installed, you can continue to the next step.
 
-#### Homebrew Package Manager
+#### Installing Homebrew Package Manager
 
 Homebrew is a package manager for Mac.
 
@@ -73,7 +73,45 @@ brew upgrade
     ```
 
 
-### Installing Packages with Homebrew
+
+---
+## Windows Users
+On Windows we will be using "winget" for most of our installations.
+
+### Winget Installation
+Winget is part of Microsoft's App Installer which you can get [here](https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1?hl=en-ch&gl=ch&rtc=1). Follow the link and install the application from the Microsoft Store. On machines managed by the department you might get a "failure" pop up, but just wait, it will install. 
+
+After installation, open the Windows Search Bar and type "cmd" and hit `return`. This will open the Command Line Interface (CLI) of Windows with which we will be working during this course.
+
+Now type the following command into the CLI and press `return`
+``` bash
+winget --help
+```
+
+Upon succesful installation, you should see a long this of possible command that "winget" can be supplied with. It should start like this:
+```bash
+Windows Package Manager v1.5.2201
+Copyright (c) Microsoft Corporation. All rights reserved.
+```
+Feel free to try some commands such as "list" to see which programs are installed on your machine.
+
+### Windows Terminal Installation
+In order work more comfortably with the CLI we will install a better version of the CLI you just used.
+
+To install "Windows Terminal" copy and paste the following command:
+```bash
+winget install -e --id Microsoft.WindowsTerminal
+```
+Here, install tells winget which action it is supposed to take and "--id" is a flag providing winget with further information. In this case the id of the program we want to install and "-e" tell it to only use exactly this id. You would have been able to find this "id" by running the command:
+```bash
+winget search WindowsTerminal
+```
+
+Head over to the search in Windows and type "terminal" and hit `return` to open the WindowsTerminal. We will continue installations there.
+
+
+
+<!-- ### Installing Packages with Homebrew
 
 Now we can use homebrew to easily install software.  We need some basic system tools for some of the programs we will install later.
 
@@ -103,9 +141,8 @@ To do this we add some extra lines to our bash profile (we will discuss what thi
 echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.zshrc
 echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.zshrc
 source .zshrc
-```
-
-## Linux & Windows Users
+``` -->
+<!-- ## Linux & Windows Users
 
 * Linux Users: Open a terminal session with `Ctrl` + `Alt` + `T`.
 * Windows Users: Open the Windows Terminal as we described [here](/windows-wsl/#installing-windows-terminal)
@@ -124,17 +161,18 @@ sudo apt-get install libxml2-dev
 sudo apt-get install libssl-dev
 sudo apt-get install gdebi-core
 ```
+-->
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
-!!! tip "Windows Users: Copy and Paste"
+<!-- !!! tip "Windows Users: Copy and Paste"
     The 'traditional' `Ctrl + C` and `Ctrl + v` may not work with your terminal because the `Ctrl + Key` commands have a special meaning with Linux operating systems.
     f they don't work for you, there are two alternatives:
 
     * Use the 'Linux' copy and paste commands: copy is `Ctrl + Shift + C` and paste is `Ctrl + Shift + V`.
     * To paste text, you just do a right-click.
     To copy anything inside the terminal, you use highlight the text with your cursor.
-    It is automatically copied to your clipboard.
+    It is automatically copied to your clipboard. -->
 <!-- markdownlint-restore -->
 
 <!-- markdownlint-capture -->
@@ -148,4 +186,3 @@ sudo apt-get install gdebi-core
     Lachlan chose, 'No' - but you can safely choose yes without your computer burning down.
 
     Whenever you get these kinds of screens, you can scroll up and down with the up and down buttons if needed and make decisions by selecting a choice as described above. -->
-<!-- markdownlint-restore -->

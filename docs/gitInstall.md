@@ -12,7 +12,8 @@ During the course we will show you how to use [GitHub](https://www.github.com) t
   * i.e. 'johnsmith' or 'johnsmith86' are OK, 'johnsmithUZH' probably not
 ## Mac Users
 
-### Installing Git
+!!! Note "Department Managed Macs"
+    Git should already be install via "xcode". If it isn't, look for 'Software Update' in your System Settings and update "xcode". [Verify your installation.](#verifying-your-install).
 
 We will install Git using Homebrew. Enter the following lines of code into your terminal:
 
@@ -23,7 +24,7 @@ brew link --force git
 
 Then close and reopen the terminal. Now [Verify your installation](#verifying-your-install).
 
-### Autocompletion
+<!---### Autocompletion
 
 When we code we want to be lazy - we don't always want to write out the whole line of code we want to enter, and would prefer the computer to autocomplete our line of code for us.
 The default MacOS terminal doesn't have this autocompletion by default, so let's add it using our trusty friend Homebrew.
@@ -48,10 +49,9 @@ brew install zsh-completion
     source ~/.zshrc
     ```
 
-<!---
+
   Autocomplete instructions from here  
   https://stackoverflow.com/questions/26462667/git-completion-not-working-in-zsh-on-os-x-yosemite-with-homebrew
-
 --->
 
 ## Linux Users
@@ -74,10 +74,13 @@ sudo apt-get install git
 Once complete, [verify your install](#verifying-your-install).
 
 ## Windows Users
-
-Git will be already installed inside your Ubuntu terminal.
-Verify this, by [verifying your installation](#verifying-your-install).
-
+Install git via the WindowsTerminal with the following command:
+```bash
+winget install -e --id Git.Git --interactive
+```
+* Accept all defaults, apart from:
+    * Default Editor: Choose Visual Studio Code in the drop down menu
+* Once installation is complete, restart WindowsTerminal.
 ## Verifying your install
 
 <!-- We will need to make Git accessible from the command line. Windows and Mac users will need to follow the steps on the page "Modifying Path Settings." Linux users will already have git accessible from the command line. -->

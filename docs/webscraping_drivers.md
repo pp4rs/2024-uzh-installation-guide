@@ -9,6 +9,9 @@ We will solve this by installing Google Chrome and using a tool called Chromedri
 
 Installing this stuff is operating system specific, hence so are the instructions below.
 
+!!! Note "Department Managed Laptops"
+    Head over to the Sofware Center and install Google Chrome.
+
 ## Mac Users
 
 We need an up to date version of the web browser Google Chrome.
@@ -61,7 +64,7 @@ It **is important** that the version numbers (i.e the '92.xxx' part) match betwe
 
     Now try again. -->
 
-## Windows and Linux Users
+## Linux Users
 
 We need an up to date version of Google Chrome and some additional linux packages.
 
@@ -133,7 +136,16 @@ It **is important** that the version numbers (i.e the '92.xx' part) match betwee
 !!! tip "Hat-tip"
     We borrowed quite liberally from Christopher Su to for instructions on [installing Chrome and Chromedriver](https://christopher.su/2015/selenium-chromedriver-ubuntu/). -->
 
-## Additional Steps for Windows 10 Users
+## Windows Users
+Everyone with admin right can install Google Chrome with:
+```bash
+winget install -e --id Google.Chrome
+```
+
+Verify the installation by opening Chrome.
+
+
+<!-- ## Additional Steps for Windows 10 Users
 
 We will Google Chrome to be able to "pop out" of our Ubuntu installation so that we can see it visually. 
 Here's how we can make that happen:
@@ -166,7 +178,7 @@ Finally, let's test if these steps worked. Open an Ubuntu terminal, and type
 google-chrome
 ```
 
-A linuxy looking Google Chrome should open in a new window.
+A linuxy looking Google Chrome should open in a new window. -->
 
 <!-- !!! tip "Starting xLaunch on Windows"
 

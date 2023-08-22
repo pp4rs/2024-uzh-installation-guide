@@ -10,7 +10,7 @@ The editors built into a specific program are generally are not a satisfying opt
 There is a slight learning curve, but soon you hopefully be wondering why no-one forced you to do this before!
 We should get you past the steepest part of the learning curve during the course itself, so we don't anticipate you struggling on your own.
 
-!!! note
+!!! tip "Note"
     None of the skills we learn in the course are tied to VS Code, so if you do decide to move away to another editor, nothing will be lost.
 
 <!-- ## Installing Sublime Text
@@ -23,6 +23,9 @@ VS Code is a relatively new text editor that works across all three platforms: L
 In a short time it has already become one of most used text editors and we hope you will soon see why.
 It is built by Microsoft, but is open source, i.e. everyone can see and modify the program's internal code - so it is less nasty on the consciousness than some of Microsoft's traditional products.
 The main advantages for us are that it includes support for debugging, embedded Git control and GitHub, syntax highlighting, intelligent code completion, and many useful plugins - all of which make our lives much easier.
+
+!!! Note "Department Managed Laptops"
+    If your laptop is managed by the department, VS Code is most likely already installed on your device. If not, search for "Software Center" and install VS Code.
 
 ## Installing VS Code on Mac
 
@@ -45,10 +48,14 @@ snap install code --classic
 Once it has been installed, verify your install by following the instructions [below](#verifying-your-install).
 
 ## Installing VS Code on Windows
+We are installing VS Code via winget by entering the following command in the terminal and hitting `Return`:
+```bash
+winget install -e --id Microsoft.VisualStudioCode --interactive
+```
 
-Go to the VS Code [download page](https://code.visualstudio.com/download), and download the Installer for Windows.
+<!-- Go to the VS Code [download page](https://code.visualstudio.com/download), and download the Installer for Windows.
+* Once downloaded double click to install. -->
 
-* Once downloaded double click to install.
 * Accept any default options.
 * At the end of the install, launch VS Code (it gives you this option on the last window).
 

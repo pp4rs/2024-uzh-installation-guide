@@ -1,66 +1,14 @@
-<!-- markdownlint-disable MD024 -->
-<!-- see https://github.com/DavidAnson/markdownlint for code to enable or disable rules -->
-# LaTeX
-
-LaTeX is a document preparation system for high-quality typesetting most often used for medium-to-large technical or scientific documents.
-Most of you probably have some familiarity with LaTeX from your Master's Theses.
-
-We may want to build some PDF documents throughout the course using LaTeX - so let's install it.
-
-## LaTeX Install for Mac
-
-We again install from Homebrew.
-Enter the following into the terminal:
-
-```bash
-brew install --cask mactex
-```
-
-## LaTeX Install for Linux & Windows
-
-LaTeX can be installed from the terminal by entering the following command and pressing `Return`:
-
-```bash
-sudo apt-get install texlive-latex-extra
-```
-
-Check everything went according to plan:
-
-``` bash
-tex --version
-```
-
-which gives the following output:
-
-``` bash
-TeX 3.141592653 (TeX Live 2021)
-kpathsea version 6.3.3
-Copyright 2021 D.E. Knuth.
-There is NO warranty.  Redistribution of this software is
-covered by the terms of both the TeX copyright and
-the Lesser GNU General Public License.
-For more information about these matters, see the file
-named COPYING and the TeX source.
-Primary author of TeX: D.E. Knuth.
-```
-
 # Pandoc
 
 Pandoc is an extremely useful 'swiss army knife' for converting between different types of markup languages from the command line.
 For example, it readily builds PDFs with latex, and markdown - both of which are heavily used in academic research.
 
-!!! note
+!!! Note "Department Managed Laptops"
+        Admin User rights are required to install Pandoc. Unfortunately, only IT has those. Hence Pandoc can't be installed.
+
+
+!!! tip "Note"
         We do not actively teach how to use Pandoc in the course - but we will utilize it in some lessons where we produce PDF, Word or HTML output from plain text files.
-
-## Pandoc Install for Linux & Windows
-
-Open a terminal window and type
-
-```bash
-sudo apt install pandoc
-```
-
- to install pandoc from the command line
 
 ## Pandoc Install for Mac
 
@@ -70,6 +18,24 @@ In a terminal window and type:
 brew install pandoc
 ```
 
+Now [verify your install](verify-pandoc-install).
+
+## Pandoc Install for Linux
+
+Open a terminal window and type
+
+```bash
+sudo apt install pandoc
+```
+
+to install pandoc from the command line. Now [verify your install](verify-pandoc-install).
+
+## Pandoc Install for Windows
+
+Open the terminal an run:
+```bash
+winget install -e --id JohnMacFarlane.Pandoc
+```
 Now [verify your install](verify-pandoc-install).
 
 ## Verify Pandoc Install

@@ -3,9 +3,9 @@
 
 # Module:  Installation Guide for Programming Practices for Research Students
 
-[![GitHub Pages](https://github.com/pp4rs/2022-uzh-installation-guide/actions/workflows/deploy.yaml/badge.svg)](https://github.com/pp4rs/2022-uzh-installation-guide//actions/workflows/deploy.yaml)
+[![GitHub Pages](https://github.com/pp4rs/2023-uzh-installation-guide/actions/workflows/deploy.yaml/badge.svg)](https://github.com/pp4rs/2023-uzh-installation-guide//actions/workflows/deploy.yaml)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![lifecycle](https://img.shields.io/badge/version-2022.0-red.svg)]()
+[![lifecycle](https://img.shields.io/badge/version-2023.0-red.svg)]()
 
 
 ## Meta-Information
@@ -13,7 +13,7 @@
 * Module Maintainer: Martin Stancsics (`@stanmart`)
 * Course: [Programming Practices for Research in Economics](https://pp4rs.github.io)
 * Institute: Dept of Economics, Uni Zurich
-* Current Version: [Fall 2023 edition](https://pp4rs.github.io/2022-uzh-installation-guide)
+* Current Version: [Fall 2023 edition](https://pp4rs.github.io/2023-uzh-installation-guide)
 
 ## Building the Site
 
@@ -24,7 +24,7 @@ If you want to build the site locally on your machine:
 * Change your working directory to this one, and then install the requirements:
 
 ```{.bash}
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 * Look at a copy of the site served locally on your machine:

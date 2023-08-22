@@ -7,6 +7,7 @@ This edition of Programming Practices is based on the previous versions of the c
 * [`2019 Foundations edition`](pp4rs.github.io/2019-foundations-uzh), by Lachlan Deer & Julian Langer
 * [`2020 edition`](pp4rs.github.io/2020-uzh), by Ulrich Bergmann, Matteo Courthoud & Lachlan Deer
 * [`2021 edition`](pp4rs.github.io/2020-uzh), by Lachlan Deer, Julian Langer, Lexi Schubert, Martin Stancsics
+* [`2022 edition`](pp4rs.github.io/2020-uzh), by Lachlan Deer, Julian Langer, Martin Stancsics
 
 It is designed after and borrows a lot from:
 
