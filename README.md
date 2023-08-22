@@ -10,7 +10,7 @@
 
 ## Meta-Information
 
-* Module Maintainer: Martin Stancsics (`@stanmart`)
+* Module Maintainer: Julius Schäper (`@jfschaeper`)
 * Course: [Programming Practices for Research in Economics](https://pp4rs.github.io)
 * Institute: Dept of Economics, Uni Zurich
 * Current Version: [Fall 2023 edition](https://pp4rs.github.io/2023-uzh-installation-guide)
@@ -46,7 +46,7 @@ All materials are licensed under a Creative Commons CC-SA license. The license a
 The suggested citation for the course materials is:
 
 ``` bash
-Lachlan Deer, Julian Langer, Lexi Schubert and Martin Stancsics, 2021, Installation Guide, Programming Practices for Research in Economics, University of Zurich
+Lachlan Deer, Julian Langer, Martin Stancsics, Julius Schäper, 2023, Installation Guide, Programming Practices for Research in Economics, University of Zurich
 ```
 
 If you find the installation guide useful - please drop us a line and say so - pp4rs@econ.uzh.ch
