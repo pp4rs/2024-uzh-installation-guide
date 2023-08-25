@@ -4,7 +4,7 @@ R is a language for statistical computing and graphics.
 R's use in the data science and econometrics community has taken off over recent years and (at a bare minimum) should be considered as an open source replacement to Stata.
 
 !!! Note "Department Managed Laptops"
-        Once again, just go to the Software Center and install R Studio. This will include R.
+        Once again, just go to the Software Center. On windows laptops just install R Studio since this will include R. On Mac, install R and RStudio individually.
 
 ## Installing R for Mac Users
 
