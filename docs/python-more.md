@@ -25,15 +25,15 @@ conda update conda --yes
 
 Next, install a handful of packages using the following command
 ```bash
-conda install jupyter jupyterlab nb_conda_kernels
+conda install numpy pandas
 ```
 
 Press enter to accept the proposed package plan with 'y' and `return`.
 
-This command installs those four packages into the default (base) environment. It is fine, as we would like those to be shared across all environments we later create. However, it is generally not the case, as we want dependencies for our different projects well separated. For example, packages for this course should be wholly independent from packages you are using to write a paper. The next command creates a `conda` environment called `pp4rs` and installs all the packages required for the course. It might take a while.
+This command installs those two packages into the default (base) environment. It is fine, as we would like those to be shared across all environments we later create. However, it is generally not the case, as we want dependencies for our different projects well separated. For example, packages for this course should be wholly independent from packages you are using to write a paper. The next command creates a `conda` environment called `pp4rs` and installs all the packages required for the course. It might take a while.
 
 ```bash
-    conda env create -f https://pp4rs.github.io/2022-uzh-installation-guide/assets/pp4rs-env.yml
+    conda env create -f https://pp4rs.github.io/2023-uzh-installation-guide/assets/pp4rs-env.yml
 ```
 
 Generally, you should have such a file for each of your projects in order to easily reproduce the environment it was built in any time in the future.
