@@ -6,7 +6,14 @@ We will be installing either "Miniforge" or "Miniconda" for this course. Both ca
 
 ## Installing Miniforge Python for Mac
 !!! Note "Department Managed Macs"
-    Go to [Miniconda Homepage](https://conda.io/miniconda.html) and either install the latest version of "Miniconda3 macOS Intel x86 64-bit pkg" or "Miniconda3 macOS Apple M1 64-bit pkg", depending on whether you have an older Intel or newer Apple Silicon Mac. Accept all defaults during installation. Open a new terminal and [verify your install](#verifying-your-installation)
+    Open a new terminal and run the commands: 
+    ``` bash
+    mkdir -p ~/miniconda3
+    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
+    bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+    rm -rf ~/miniconda3/miniconda.sh
+    ```
+    Then proceed to [verify your install](#verifying-your-installation)
 
 Install using Homebrew.
 In your terminal type the following and press return:
