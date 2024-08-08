@@ -5,58 +5,22 @@ Conda is a pre-packaged Python distribution. It is mainly used as a package mana
 We will be installing either "Miniforge" or "Miniconda" for this course. Both can, for now, be regarded as equivalent. Some of you might have heard of "Anaconda". Anaconda is the bigger brother of Miniconda, but contains many packages we don't require. 
 
 ## Installing Miniforge Python for Mac
-!!! Note "Department Managed Macs"
-    Open a new terminal and run the commands: 
-    ``` bash
-    mkdir -p ~/miniconda3
-    curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
-    bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
-    rm -rf ~/miniconda3/miniconda.sh
-    ```
-    Then proceed to [verify your install](#verifying-your-installation)
-
-Install using Homebrew.
-In your terminal type the following and press return:
+Open a new terminal and run the commands: 
 
 ``` bash
-brew install --cask miniforge
+mkdir -p ~/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
 ```
 
-During the installation process you might be the following output asking you to review the license agreement:
-
+After installing, initialize your newly-installed Miniconda. The following commands initialize for bash and zsh shells:
 ``` bash
-Welcome to Anaconda3
-
-In order to continue the installation process, please review the license
-agreement.
-Please, press ENTER to continue
->>>
-...
-Do you approve the license terms? [yes|no]
+~/miniconda3/bin/conda init bash
+~/miniconda3/bin/conda init zsh
 ```
 
-Press `Return` until you reach the end, and type 'yes'.
-
-<!--
-### Making Anaconda Python Accessible from the Terminal
-
-By default, Mac uses a default install of Python inside the terminal.
-We want to change that.
-
-Enter the following in the terminal and press `Return`:
-
-``` bash
-echo 'export PATH="/usr/local/anaconda3/bin:$PATH"' >> ~/.zshrc
-```
-
-Then, reload the terminal environment:
-
-``` bash
-source .zshrc
-```
--->
-
-Now proceed to [verify your install](#verifying-your-installation)
+Then proceed to [verify your install](#verifying-your-installation)
 
 ## Installing Miniforge Python for Linux
 
