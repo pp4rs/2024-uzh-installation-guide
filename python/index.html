@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Python - Programming Practices for Research in Econonomics</title>
+    <title>Python - Programming Practices for Research in Economics</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -30,7 +30,7 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> Programming Practices for Research in Econonomics
+          <a href=".." class="icon icon-home"> Programming Practices for Research in Economics
         </a><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
       <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
@@ -59,6 +59,14 @@
                 <li class="toctree-l1 current"><a class="reference internal current" href="#">Python</a>
     <ul class="current">
     <li class="toctree-l2"><a class="reference internal" href="#installing-miniforge-python-for-mac">Installing Miniforge Python for Mac</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#apple-silicon-macs">Apple Silicon Macs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#intel-macs">Intel Macs</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#initialization">Initialization</a>
+    </li>
+        </ul>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#installing-miniforge-python-for-linux">Installing Miniforge Python for Linux</a>
     </li>
@@ -124,7 +132,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
       <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">Programming Practices for Research in Econonomics</a>
+          <a href="..">Programming Practices for Research in Economics</a>
         
       </nav>
       <div class="wy-nav-content">
@@ -144,17 +152,25 @@
 <p>Conda is a pre-packaged Python distribution. It is mainly used as a package manager that enables simple creation of virtual enviroments for Python. More on this during the course.</p>
 <p>We will be installing either "Miniforge" or "Miniconda" for this course. Both can, for now, be regarded as equivalent. Some of you might have heard of "Anaconda". Anaconda is the bigger brother of Miniconda, but contains many packages we don't require. </p>
 <h2 id="installing-miniforge-python-for-mac">Installing Miniforge Python for Mac</h2>
-<p>Open a new terminal and run the commands: </p>
+<p>Open a new terminal and run the command corresponding to your processor: </p>
+<h3 id="apple-silicon-macs">Apple Silicon Macs</h3>
 <pre><code class="language-bash">mkdir -p ~/miniconda3
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
 </code></pre>
-<p>After installing, initialize your newly-installed Miniconda. The following commands initialize for bash and zsh shells:</p>
+<h3 id="intel-macs">Intel Macs</h3>
+<pre><code class="language-bash">mkdir -p ~/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+</code></pre>
+<h3 id="initialization">Initialization</h3>
+<p>After installing (either versions of Mac), initialize your newly-installed Miniconda. The following commands initialize for bash and zsh shells:</p>
 <pre><code class="language-bash">~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
 </code></pre>
-<p>Then proceed to <a href="#verifying-your-installation">verify your install</a></p>
+<p>Restart the terminal and then proceed to <a href="#verifying-your-installation">verify your install</a></p>
 <h2 id="installing-miniforge-python-for-linux">Installing Miniforge Python for Linux</h2>
 <p>First, we need to download the Anaconda Bash Script (a file that will install things for us). Enter the following into the terminal:</p>
 <pre><code class="language-bash">curl -L -O &quot;https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh&quot;
@@ -194,7 +210,11 @@ by running conda init? [yes|no]
 <p>We are installing Miniconda via winget with the following command:</p>
 <pre><code class="language-bash">winget install -e --id Anaconda.Miniconda3 --interactive
 </code></pre>
-<p>Accept all defaults and restart the WindowsTerminal. After restart, proceed to <a href="#verifying-your-installation">verify your install</a>.</p>
+<p>Accept all defaults, except for 'Add Miniconda3 to my PATH environment variable' which needs to be checked. Restart the WindowsTerminal. </p>
+<p>After restarting the terminal, initialize your newly-installed Miniconda:</p>
+<pre><code class="language-bash">conda init
+</code></pre>
+<p>After restarting the WindowsTerminal once more, proceed to <a href="#verifying-your-installation">verify your install</a>.</p>
 <h2 id="verifying-your-installation">Verifying Your Installation</h2>
 <p>In order to activate Miniforge/Miniconda's environment, we have to start with</p>
 <pre><code>conda activate
@@ -227,7 +247,7 @@ This was successful if you now see a file path rather than the <code>&gt;&gt;&gt
 </code></pre>
 <div class="admonition tip">
 <p class="admonition-title">Updating the Conda Install</p>
-<p>The above procedure will always install the latest available Miniforge distribution for your platform. If you want to update an existing installation, you can generally do that using the command <code>conda updade --all</code>, which updates all packages in a given environment (including conda itself). </p>
+<p>The above procedure will always install the latest available Miniforge distribution for your platform. If you want to update an existing installation, you can generally do that using the command <code>conda update --all</code>, which updates all packages in a given environment (including conda itself). </p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Python 2 vs Python 3</p>

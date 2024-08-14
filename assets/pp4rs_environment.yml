@@ -1,0 +1,19 @@
+name: pp4rs
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - altair
+  - beautifulsoup4
+  - jupyter
+  - matplotlib
+  - scipy
+  - seaborn
+  - statsmodels
+  - nltk
+  - scikit-learn
+  - pip
+  - pip:
+      - openai  # Or any other package not found in conda
