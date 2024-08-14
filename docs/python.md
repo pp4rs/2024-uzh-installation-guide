@@ -5,8 +5,9 @@ Conda is a pre-packaged Python distribution. It is mainly used as a package mana
 We will be installing either "Miniforge" or "Miniconda" for this course. Both can, for now, be regarded as equivalent. Some of you might have heard of "Anaconda". Anaconda is the bigger brother of Miniconda, but contains many packages we don't require. 
 
 ## Installing Miniforge Python for Mac
-Open a new terminal and run the commands: 
+Open a new terminal and run the command corresponding to your processor: 
 
+### Apple Silicon Macs
 ``` bash
 mkdir -p ~/miniconda3
 curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh
@@ -14,13 +15,21 @@ bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
 ```
 
-After installing, initialize your newly-installed Miniconda. The following commands initialize for bash and zsh shells:
+### Intel Macs
+``` bash
+mkdir -p ~/miniconda3
+curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-x86_64.sh -o ~/miniconda3/miniconda.sh
+bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+rm -rf ~/miniconda3/miniconda.sh
+```
+### Initialization
+After installing (either versions of Mac), initialize your newly-installed Miniconda. The following commands initialize for bash and zsh shells:
 ``` bash
 ~/miniconda3/bin/conda init bash
 ~/miniconda3/bin/conda init zsh
 ```
 
-Then proceed to [verify your install](#verifying-your-installation)
+Restart the terminal and then proceed to [verify your install](#verifying-your-installation)
 
 ## Installing Miniforge Python for Linux
 
@@ -86,7 +95,14 @@ We are installing Miniconda via winget with the following command:
 ```bash
 winget install -e --id Anaconda.Miniconda3 --interactive
 ```
-Accept all defaults and restart the WindowsTerminal. After restart, proceed to [verify your install](#verifying-your-installation).
+Accept all defaults, except for 'Add Miniconda3 to my PATH environment variable' which needs to be checked. Restart the WindowsTerminal. 
+
+After restarting the terminal, initialize your newly-installed Miniconda:
+``` bash
+conda init
+```
+
+After restarting the WindowsTerminal once more, proceed to [verify your install](#verifying-your-installation).
  
 
 ## Verifying Your Installation
@@ -145,7 +161,7 @@ conda deactivate
 ```
 
 !!! tip "Updating the Conda Install"
-    The above procedure will always install the latest available Miniforge distribution for your platform. If you want to update an existing installation, you can generally do that using the command `conda updade --all`, which updates all packages in a given environment (including conda itself). 
+    The above procedure will always install the latest available Miniforge distribution for your platform. If you want to update an existing installation, you can generally do that using the command `conda update --all`, which updates all packages in a given environment (including conda itself). 
 
 !!! tip "Python 2 vs Python 3"
     Python 2 and 3 are incompatible in syntax. If you had Python 2 previously installed on your machine, you might have seen `Python 2.x.x` above. In that case try typing

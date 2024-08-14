@@ -19,7 +19,8 @@ To open a terminal session:
 * When the terminal appears, open it.
 
 !!! Note "Department Managed Macs"
-    Unfortunately, installation of Homebrew requires admin rights which aren't available on laptops newly issued by the department. Please move on to the next installation step "Text Editor".
+    Unfortunately, installation of Homebrew requires admin rights which aren't available on laptops newly issued by the department. Please move on to the next installation step [Text Editor](textEditor.md).
+
 #### Installing the X-code Tools
 
 We want to install 'X-code command line tools'. Copy and paste the following and press `Return`
@@ -98,7 +99,7 @@ Feel free to try some commands such as "list" to see which programs are installe
 ### Windows Terminal Installation
 In order work more comfortably with the CLI we will install a better version of the CLI you just used.
 
-To install "Windows Terminal" copy and paste the following command:
+To install "Windows Terminal" copy and paste the following command and accept the EULA when prompted, by typing 'yes' and hitting `return`:
 ```bash
 winget install -e --id Microsoft.WindowsTerminal
 ```

@@ -1,4 +1,4 @@
-site_name: Programming Practices for Research in Econonomics
+site_name: Programming Practices for Research in Economics
 nav:
 - Welcome: index.md
 # - Windows Subsystem: windows-wsl.md

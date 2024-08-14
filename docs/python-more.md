@@ -33,7 +33,7 @@ Press enter to accept the proposed package plan with 'y' and `return`.
 This command installs those two packages into the default (base) environment. It is fine, as we would like those to be shared across all environments we later create. However, it is generally not the case, as we want dependencies for our different projects well separated. For example, packages for this course should be wholly independent from packages you are using to write a paper. The next command creates a `conda` environment called `pp4rs` and installs all the packages required for the course. It might take a while.
 
 ```bash
-    conda env create -f https://pp4rs.github.io/2023-uzh-installation-guide/assets/pp4rs-env.yml
+    conda env create -f https://pp4rs.github.io/2024-uzh-installation-guide/assets/pp4rs-environment.yml
 ```
 
 Generally, you should have such a file for each of your projects in order to easily reproduce the environment it was built in any time in the future.

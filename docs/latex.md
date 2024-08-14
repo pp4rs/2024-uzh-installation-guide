@@ -8,7 +8,7 @@ Most of you probably have some familiarity with LaTeX from your Master's Theses.
 We may want to build some PDF documents throughout the course using LaTeX - so let's install it.
 
 !!! note "Department Managed Laptops"
-        Latex can be install from the Software Center. Search for "TeXLive" and install the most recent version.
+        Latex can be install from the Software Center. Search for "Mactex" on Mac and "TeXLive" won Windows and install the most recent version.
 
 ## LaTeX Install for Mac
 

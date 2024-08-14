@@ -80,7 +80,8 @@ winget install -e --id Git.Git --interactive
 ```
 * Accept all defaults, apart from:
     * Default Editor: Choose Visual Studio Code in the drop down menu
-* Once installation is complete, restart WindowsTerminal.
+* Once installation is complete, restart WindowsTerminal and [verify your install](#verifying-your-install).
+
 ## Verifying your install
 
 <!-- We will need to make Git accessible from the command line. Windows and Mac users will need to follow the steps on the page "Modifying Path Settings." Linux users will already have git accessible from the command line. -->

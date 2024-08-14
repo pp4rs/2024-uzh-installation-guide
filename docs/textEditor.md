@@ -25,7 +25,7 @@ It is built by Microsoft, but is open source, i.e. everyone can see and modify t
 The main advantages for us are that it includes support for debugging, embedded Git control and GitHub, syntax highlighting, intelligent code completion, and many useful plugins - all of which make our lives much easier.
 
 !!! Note "Department Managed Laptops"
-    If your laptop is managed by the department, VS Code is most likely already installed on your device. If not, search for "Software Center" and install VS Code.
+    If your laptop is managed by the department, Visual Studio Code is most likely already installed on your device. If not, search for "Software Center" and install it. (Visual Studio Code = VS Code)
 
 ## Installing VS Code on Mac
 
@@ -115,15 +115,6 @@ To add extensions:
 
 We recommend (but don't require) the following extensions to be added for this course:
 
-* Bracket Pair Colorizer 2
-* Code Spell Checker
 * Git History
 * GitLens
-* Markdown All in One
-* Markdown Preview Enhanced
-* Project Manager
 * Python
-* R
-* vscode-icons
-* vscode-pdf
-* Whitespacer

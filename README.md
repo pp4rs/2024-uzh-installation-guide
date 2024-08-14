@@ -3,17 +3,20 @@
 
 # Module:  Installation Guide for Programming Practices for Research Students
 
-[![GitHub Pages](https://github.com/pp4rs/2023-uzh-installation-guide/actions/workflows/deploy.yaml/badge.svg)](https://github.com/pp4rs/2023-uzh-installation-guide//actions/workflows/deploy.yaml)
+[![GitHub Pages](https://github.com/pp4rs/2024-uzh-installation-guide/actions/workflows/deploy.yaml/badge.svg)](https://github.com/pp4rs/2024-uzh-installation-guide//actions/workflows/deploy.yaml)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![lifecycle](https://img.shields.io/badge/version-2023.0-red.svg)]()
+[![lifecycle](https://img.shields.io/badge/version-2024.0-red.svg)]()
 
 
 ## Meta-Information
 
 * Module Maintainer: Julius Schäper (`@jfschaeper`)
-* Course: [Programming Practices for Research in Economics](https://pp4rs.github.io)
+* Course: [pp4rs.github.io](https://pp4rs.github.io)
 * Institute: Dept of Economics, Uni Zurich
-* Current Version: [Fall 2023 edition](https://pp4rs.github.io/2023-uzh-installation-guide)
+* Current Version: [Installation Guide 2024](https://pp4rs.github.io/2024-uzh-installation-guide)
+
+## Editing the Site
+To edit information displayed on the webpage, edit the markdown documents in `docs`. Each `.md` corresponds to one subpage of the webpage. The general structure of the entire webpage is provided by `mkdocs.yml`. To add a new subpage, add it at the desired position in `mkdocs.yml` and create the `.md` file in docs.
 
 ## Building the Site
 
@@ -21,10 +24,10 @@ The site is rendered using [MkDocs](https://www.mkdocs.org/) and build using Git
 
 If you want to build the site locally on your machine:
 
-* Change your working directory to this one, and then install the requirements:
+* Change your working directory to this one, and then create an environment with the necessary packages:
 
 ```{.bash}
-pip install -r requirements.txt
+conda env create -f environment.yml -n <env_name>
 ```
 
 * Look at a copy of the site served locally on your machine:
@@ -32,10 +35,21 @@ pip install -r requirements.txt
 ```{.bash}
 mkdocs serve
 ```
-## Want to Contribute
 
-* See the contributing guide [here](CONTRIBUTING.md).
-* By contributing you agree to abide by the [Code of Conduct](CONDUCT.md)
+* The website will be served at http://127.0.0.1:8000/.
+
+If you want to host the website on GitHub pages:
+
+* Change your working directory to this one and run:
+```{.bash}
+mkdocs gh-deploy
+```
+
+* Behind the scenes, MkDocs will build your docs and use the ghp-import tool to commit them to the gh-pages branch and push the gh-pages branch to GitHub.
+
+* Now navigate to 'Settings' in the GitHub repository and make sure 'Build and Deployment' has its source set to 'Deploy from a branch' and choose the 'gh-pages' branch with 'root' as the folder origin.
+
+* After a short period of time the website should be available.
 
 ## License
 
@@ -46,7 +60,7 @@ All materials are licensed under a Creative Commons CC-SA license. The license a
 The suggested citation for the course materials is:
 
 ``` bash
-Lachlan Deer, Julian Langer, Martin Stancsics, Julius Schäper, 2023, Installation Guide, Programming Practices for Research in Economics, University of Zurich
+Julius Schäper, 2024, Installation Guide, Programming Practices for Research in Economics, University of Zurich
 ```
 
 If you find the installation guide useful - please drop us a line and say so - pp4rs@econ.uzh.ch
