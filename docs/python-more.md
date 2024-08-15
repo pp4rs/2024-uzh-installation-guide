@@ -44,14 +44,14 @@ Generally, you should have such a file for each of your projects in order to eas
 
 Now it is time to test your Python installation. Type into your shell the following
 ```bash
-    conda activate pp4rs
+    conda activate pp4rs_backup
 ```
-You should now see that the CLI says `(pp4rs)` in the beginning.
+You should now see that the CLI says `(pp4rs_backup)` in the beginning.
 To see which packages are install in this new pp4rs environment, run:
 ```bash
     conda list
 ```
-It should return a list with all of the packages that are installed in the `pp4rs` environment. In order to use them, you will need to activate this environment in the beginning of every new shell session.
+It should return a list with all of the packages that are installed in the `pp4rs_backup` environment. In order to use them, you will need to activate this environment in the beginning of every new shell session.
 
 You can always see which environment you are currently using, by looking at the beginning of the prompt in your terminal. If you open a new terminal it will say `(base)`, meaning your base environment. To use the pp4rs environment, you need to activate it.
 
