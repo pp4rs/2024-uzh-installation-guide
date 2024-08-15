@@ -165,13 +165,13 @@ In this case we recommend you use the `pip` package management tool to install t
 <p>You can find more info on how to create such environment specifications <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#create-env-file-manually">here</a></p>
 </div>
 <p>Now it is time to test your Python installation. Type into your shell the following</p>
-<pre><code class="language-bash">    conda activate pp4rs
+<pre><code class="language-bash">    conda activate pp4rs_backup
 </code></pre>
-<p>You should now see that the CLI says <code>(pp4rs)</code> in the beginning.
+<p>You should now see that the CLI says <code>(pp4rs_backup)</code> in the beginning.
 To see which packages are install in this new pp4rs environment, run:</p>
 <pre><code class="language-bash">    conda list
 </code></pre>
-<p>It should return a list with all of the packages that are installed in the <code>pp4rs</code> environment. In order to use them, you will need to activate this environment in the beginning of every new shell session.</p>
+<p>It should return a list with all of the packages that are installed in the <code>pp4rs_backup</code> environment. In order to use them, you will need to activate this environment in the beginning of every new shell session.</p>
 <p>You can always see which environment you are currently using, by looking at the beginning of the prompt in your terminal. If you open a new terminal it will say <code>(base)</code>, meaning your base environment. To use the pp4rs environment, you need to activate it.</p>
 <!-- !!! note
     If you are using a computer with an Intel processor and want every ounce of performance for linear algebra operations, you might want to tell conda to use Intel's matrix algebra algorithms instead of the default open source ones. In order to do that, you simply have to install a quasi-package the following way

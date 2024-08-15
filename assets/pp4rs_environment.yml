@@ -1,4 +1,4 @@
-name: pp4rs
+name: pp4rs_backup
 channels:
   - conda-forge
   - defaults
